@@ -9,7 +9,7 @@ const Select = ({ label, value, onChange, children }) => {
   const displayedValue = getDisplayedValue(value, children);
 
   return (
-    <Wrapper>
+    <Wrapper aria-label={label}>
       <StyledSelect value={value} onChange={onChange}>
         {children}
       </StyledSelect>
